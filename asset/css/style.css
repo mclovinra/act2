@@ -1,0 +1,73 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Establece la altura completa de la ventana */
+}
+
+.sidebar {
+    width: 20%; /* Ancho del lado del menú */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease; /* Transición de color al pasar el ratón */
+}
+
+.sidebar ul li a:hover {
+    color: #ddd; /* Cambio de color al pasar el ratón */
+}
+
+.main-content {
+    flex: 1; /* El resto del espacio disponible */
+    display: flex;
+    flex-wrap: wrap; /* Envuelve los cuadros de colores si no caben en una fila */
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+}
+
+.color-box {
+    width: 100%; /* Ancho de cada cuadro de color (50% para 2 cuadros por fila) */
+    height: 25vh; /* Altura del 25% de la ventana */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+    margin-inline: 1rem;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
